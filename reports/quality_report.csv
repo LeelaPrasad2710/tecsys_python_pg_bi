@@ -1,0 +1,9 @@
+check_name,table_name,failed_rows,status
+Duplicate order IDs,orders,5,FAIL
+Non-positive or missing quantities,order_items,2,FAIL
+Missing customer IDs,orders,2,FAIL
+Unexpected order statuses,orders,2,FAIL
+Discount outside 0-100,order_items,0,PASS
+Orphan customer references,orders,3,FAIL
+Actual delivery before dispatch,deliveries,1,FAIL
+Delivered without actual date,deliveries,0,PASS

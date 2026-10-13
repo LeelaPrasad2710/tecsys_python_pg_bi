@@ -1,0 +1,18 @@
+check,table,failed_rows,status,details
+PRIMARY_KEY,customers,0,PASS,Missing=0; duplicate occurrences=0
+PRIMARY_KEY,products,0,PASS,Missing=0; duplicate occurrences=0
+PRIMARY_KEY,orders,0,PASS,Missing=0; duplicate occurrences=0
+PRIMARY_KEY,order_items,0,PASS,Missing=0; duplicate occurrences=0
+PRIMARY_KEY,deliveries,0,PASS,Missing=0; duplicate occurrences=0
+PRIMARY_KEY,returns,0,PASS,Missing=0; duplicate occurrences=0
+FOREIGN_KEY_customer_id,orders,0,PASS,References customers.customer_id; missing=0; orphan=0
+FOREIGN_KEY_order_id,order_items,0,PASS,References orders.order_id; missing=0; orphan=0
+FOREIGN_KEY_product_id,order_items,0,PASS,References products.product_id; missing=0; orphan=0
+FOREIGN_KEY_order_id,deliveries,0,PASS,References orders.order_id; missing=0; orphan=0
+FOREIGN_KEY_order_id,returns,0,PASS,References orders.order_id; missing=0; orphan=0
+ROW_RECONCILIATION,customers,0,PASS,Bronze=10005; Silver=10000; Quarantine=0; exact duplicates removed=5; difference=0
+ROW_RECONCILIATION,products,0,PASS,Bronze=1002; Silver=998; Quarantine=2; exact duplicates removed=2; difference=0
+ROW_RECONCILIATION,orders,0,PASS,Bronze=50005; Silver=49993; Quarantine=12; exact duplicates removed=0; difference=0
+ROW_RECONCILIATION,order_items,0,PASS,Bronze=100000; Silver=99781; Quarantine=219; exact duplicates removed=0; difference=0
+ROW_RECONCILIATION,deliveries,0,PASS,Bronze=45000; Silver=44988; Quarantine=12; exact duplicates removed=0; difference=0
+ROW_RECONCILIATION,returns,0,PASS,Bronze=5000; Silver=4992; Quarantine=8; exact duplicates removed=0; difference=0

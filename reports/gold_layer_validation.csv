@@ -1,0 +1,24 @@
+check_name,status
+Daily Sales units reconcile to Silver,PASS
+Daily Sales revenue reconciles to Silver,PASS
+Daily Sales dates are unique,PASS
+Daily delivered order count reconciles,PASS
+Product IDs are unique,PASS
+Product units reconcile to Daily Sales,PASS
+Product sales reconcile to Daily Sales,PASS
+Product revenue ranks are correct,PASS
+All Silver customers represented,PASS
+Customer units reconcile to Daily Sales,PASS
+Customer sales reconcile to Daily Sales,PASS
+Customer delivered orders reconcile,PASS
+Delivery Gold has one KPI row,PASS
+Eligible delivery count reconciles,PASS
+On-time delivery count reconciles,PASS
+Late delivery count reconciles,PASS
+On-time delivery rate reconciles,PASS
+Average delivery duration reconciles,PASS
+Return reasons reconcile,PASS
+Return counts reconcile,PASS
+Orders with returns reconcile,PASS
+Returned quantities reconcile,PASS
+Total return records reconcile,PASS
